@@ -1,0 +1,27 @@
+.form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(100, 103, 255);
+    color:white;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
