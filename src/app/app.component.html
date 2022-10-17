@@ -12,3 +12,8 @@
 <ng-template #sinRegistrar>
   <p style="text-align: center;">Nadie registrado</p>
 </ng-template>
+<br>
+<br>
+<ul style="font-weight:bold">
+  <li *ngFor="let entrada of entradas; let i = index">{{ entrada.titulo }} .   Entrada: {{i+1}}</li>
+</ul>
