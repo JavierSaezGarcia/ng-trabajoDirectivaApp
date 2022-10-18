@@ -5,10 +5,15 @@
   <br>
   <input type="text" name="apellido" id="apellido" placeholder="Apellido" [(ngModel)]="apellido">
   <br>
+  <input type="text" name="cargo" id="cargo" placeholder="Cargo" [(ngModel)]="cargo">
+  <br>
+  <input type="text" name="profesion" id="profesion" placeholder="Profesion" [(ngModel)]="profesion">
+  <br>
   <button type="submit" id="" (click)="registrarUsuario()">Registrar</button>
 </form>
 <br>
-<p *ngIf="registrado; else sinRegistrar" style="text-align: center;">{{ mensaje }} con el nombre {{ nombre }} y apellido {{ apellido }}</p>
+<p *ngIf="registrado; else sinRegistrar" style="text-align: center;">{{ mensaje }} con el nombre {{ nombre }} y apellido {{ apellido }} 
+  y tiene el cargo de <span [ngStyle]="{color: cargo=='director' || cargo=='directora' ? 'red' : 'black'}">{{cargo}}</span> y una profesion de <span [ngClass]="{paraProfesion:profesion=='developer'}">{{ profesion }}</span></p>
 <ng-template #sinRegistrar>
   <p style="text-align: center;">Nadie registrado</p>
 </ng-template>

@@ -25,3 +25,8 @@
     cursor: pointer;
     font-size: 1.2rem;
   }
+  .paraProfesion{
+    color:green;
+    font-weight:bold;
+    text-decoration: underline;
+  }

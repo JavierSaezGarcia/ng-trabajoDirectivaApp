@@ -11,6 +11,8 @@ export class AppComponent {
   registrado = false;
   nombre:string = "";
   apellido:string = "";
+  cargo:string ="";
+  profesion:string ="";
   entradas: any[];
 
   registrarUsuario(){    
